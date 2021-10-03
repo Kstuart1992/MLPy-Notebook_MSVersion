@@ -1,13 +1,18 @@
-﻿## How to use the RAPIDS on AzureML materials
-### Setting up requirements
-The material requires the use of the Azure ML SDK and of the Jupyter Notebook Server to run the interactive execution. Please refer to instructions to [setup the environment.](https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-configure-environment#local "Local Computer Set Up") Follow the instructions under **Local Computer**, make sure to run the last step: <span style="font-family: Courier New;">pip install \<new package\></span> with <span style="font-family: Courier New;">new package = progressbar2  (pip install progressbar2)</span>
-  
-After following the directions, the user should end up setting a conda environment (<span style="font-family: Courier New;">myenv</span>)that can be activated in an Anaconda prompt
+## How to use the RAPIDS on AzureML
+### Setting up
+This equires the use of the Azure ML SDK and of the Jupyter Notebook Server to run the interactive execution. The altered notebook can be seen in concept below through MS Doc's just navigate to the local enviorment set-up and you can see the placed I make note of in this libray.
 
-The user would also require an Azure Subscription with a Machine Learning Services quota on the desired region for 24 nodes or more (to be able to select a vmSize with 4 GPUs as it is used on the Notebook) on the desired VM family ([NC\_v3](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-gpu#ncv3-series),  [NC\_v2](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-gpu#ncv2-series), [ND](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-gpu#nd-series) or [ND_v2](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-gpu#ndv2-series-preview)), the specific vmSize to be used within the chosen family would also need to be whitelisted for Machine Learning Services usage.  
+MS Native: [setup the environment.](https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-configure-environment#local "Local Computer Set Up") Follow the instructions under **Local Computer**, make sure to run the last step: <span style="font-family: Courier New;">pip install \<new package\></span> with <span style="font-family: Courier New;">new package = progressbar2  (pip install progressbar2)</span>
+  
+After, you should set-up a conda environment (<span style="font-family: Courier New;">myenv</span>)that can be activated in an Anaconda prompt
+
+Requirments for Cloud:
+  - Azure Subscription 
+  - Machine Learning Services 
+    - Quota on the desired region for at least 24 nodes (select a vmSize with 4 GPUs for the Notebook) on the desired VM family ([NC\_v3](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-gpu#ncv3-series),  [NC\_v2](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-gpu#ncv2-series), [ND](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-gpu#nd-series) or [ND_v2](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-gpu#ndv2-series-preview)), <- GPU is only useful for things like image processing, see your free services and previews in your Azure durectory before paying for additional services =D  
 
 &nbsp;  
-### Getting and running the material 
+### Getting started on MS 
 Clone the AzureML Notebooks repository in GitHub by running the following command on a local_directory: 
 
 * C:\local_directory>git clone https://github.com/Azure/MachineLearningNotebooks.git
@@ -27,9 +32,9 @@ The following notebook will appear:
 
 &nbsp;  
 ### Master Jupyter Notebook
-The notebook can be executed interactively step by step, by pressing the Run button (In a red circle in the above image.)
-
-The first couple of functional steps import the necessary AzureML libraries.  If you experience any errors please refer back to the [setup the environment.](https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-configure-environment#local "Local Computer Set Up") instructions.
+The notebook can be executed interactively step by step, by pressing the Run button - Red Button
+The first couple of functional steps import the necessary AzureML libraries.  
+  If you experience any errors please refer back to MS's configuration Docs for more [setup the environment.](https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-configure-environment#local "Local Computer Set Up") instructions.
 
 &nbsp;  
 #### Setting up a Workspace
@@ -38,7 +43,7 @@ The following step gathers the information necessary to set up a workspace to ex
 ![](imgs/WorkSpaceSetUp.png)
 
 
-It is important to be sure to set the correct values for the subscription\_id, resource\_group, workspace\_name, and region before executing the step. An example is:
+## ! It is important to be sure to set the correct values for the subscription\_id, resource\_group, workspace\_name, and region before executing the step. An example is:
 
     subscription_id = os.environ.get("SUBSCRIPTION_ID", "1358e503-xxxx-4043-xxxx-65b83xxxx32d")
     resource_group = os.environ.get("RESOURCE_GROUP", "AML-Rapids-Testing")
