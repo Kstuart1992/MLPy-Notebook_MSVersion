@@ -1,9 +1,9 @@
 # Machine Learning with Python
 
-> a repository of personally hosted - supplied examples, can be found at https://github.com/kstuart1992/contrb/
+> I host a repository of supplied examples, found [here](https://github.com/kstuart1992/MLPy-Notebook_MSVersion/contrib/fairness/upload-fairness-dashboard.ipynb)
 
 Welcome to Part 2 of the AI Logs:
-Azure Machine Learning Python SDK will be our platform for this go-
+Azure Machine Learning Python SDK will be our platform for this section-
 
 ## Getting started
 
@@ -41,9 +41,8 @@ In those cases, pull requests are ignored.
 These projects have a few lic. the majority adopt the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). 
 Please see the [code of conduct](CODE_OF_CONDUCT.md) for details. All others will be included with the file and include notes.
 
-## Reference
+## Future Releases
 
-Microsoft has some additional documents found below - mainly on how to get started and if your paying for Azure, what step and concepts to those intergrations are involved.
-
-- [Documentation](https://docs.microsoft.com/azure/machine-learning)
+Check back but I will most likely moving assets and my future work to other platforms
+Thank you for all the support 
 
