@@ -1,6 +1,6 @@
 # Machine Learning with Python
 
-> a repository of examples using mlflow can be found at https://github.com/kstuart1992/ml-examples
+> a repository of personally hosted - supplied examples, can be found at https://github.com/kstuart1992/contrb/
 
 Welcome to Part 2 of the AI Logs:
 Azure Machine Learning Python SDK will be our platform for this go-
