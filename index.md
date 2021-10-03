@@ -1,18 +1,14 @@
 
 # Index
-Azure Machine Learning is a cloud service that you use to train, deploy, automate,
-and manage machine learning models. This index should assist in navigating the Azure
-Machine Learning notebook samples and encourage efficient retrieval of topics and content.
+Azure Machine Learning is a part of the Microsoft cloud service that you use to train, deploy, automate,
+and manage machine learning models. This index should assist in navigating the Azure Machine Learning notebook 
+samples that help you get the concepts involved. =) {working on one for GCloud for 2022}
 ![Impressions](https://PixelServer20190423114238.azurewebsites.net/api/impressions/MachineLearningNotebooks/Index.png)
-
 ## Getting Started
-
 |Title| Task | Dataset | Training Compute | Deployment Target | ML Framework | Tags |
 |:----|:-----|:-------:|:----------------:|:-----------------:|:------------:|:------------:|
 | [Using Azure ML environments](https://github.com/Azure/MachineLearningNotebooks/blob/master//how-to-use-azureml/training/using-environments/using-environments.ipynb) | Creating and registering environments | None | Local | None | None | None |
-
 ## Tutorials
-
 |Title| Task | Dataset | Training Compute | Deployment Target | ML Framework | Tags |
 |:----|:-----|:-------:|:----------------:|:-----------------:|:------------:|:------------:|
 | [Forecasting BikeShare Demand](https://github.com/Azure/MachineLearningNotebooks/blob/master//how-to-use-azureml/automated-machine-learning/forecasting-bike-share/auto-ml-forecasting-bike-share.ipynb) | Forecasting | BikeShare | Remote | None | Azure ML AutoML | Forecasting |
