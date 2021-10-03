@@ -1,14 +1,15 @@
-# Azure Machine Learning Python SDK notebooks
+# Machine Learning with Python
 
-> a community-driven repository of examples using mlflow for tracking can be found at https://github.com/Azure/azureml-examples
+> a repository of examples using mlflow can be found at https://github.com/kstuart1992/ml-examples
 
-Welcome to the Azure Machine Learning Python SDK notebooks repository!
+Welcome to Part 2 of the AI Logs:
+Azure Machine Learning Python SDK will be our platform for this go-
 
 ## Getting started
 
-These notebooks are recommended for use in an Azure Machine Learning [Compute Instance](https://docs.microsoft.com/azure/machine-learning/concept-compute-instance), where you can run them without any additional set up.
+Recommended for use in an Azure Machine Learning [Compute Instance](https://docs.microsoft.com/azure/machine-learning/concept-compute-instance), where you can run them without any additional set up. I will include concepts for alternitive methods when I have extra time. I'll make sure to include notes on how to do all these experiments on Azure for free* given you don't leave it running and read the doc's lol
 
-However, the notebooks can be run in any development environment with the correct `azureml` packages installed.
+For the easiest "non-MS ver" is a local development environment with a few `azureml` packages installed. (you can configure as needed) please be sure to check the ml-flow set-up as well, okay getting started - Easy way first:
 
 Install the `azureml.core` Python package:
 
@@ -16,7 +17,7 @@ Install the `azureml.core` Python package:
 pip install azureml-core
 ```
 
-Install additional packages as needed:
+Install additional packages* or start off basic:
 
 ```sh
 pip install azureml-mlflow
@@ -27,17 +28,22 @@ pip install azureml-pipeline-steps
 ...
 ```
 
-We recommend starting with one of the [quickstarts](tutorials/compute-instance-quickstarts).
+Then try out one of the [quickstarts](tutorials/compute-instance-quickstarts).
 
 ## Contributing
 
-This repository is a push-only mirror. Pull requests are ignored.
+This repository is a push-only mirror *in most places- I'll touch base on these where appropriate. 
+
+In those cases, pull requests are ignored.
 
 ## Code of Conduct
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). Please see the [code of conduct](CODE_OF_CONDUCT.md) for details.
+These projects have a few lic. the majority adopt the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). 
+Please see the [code of conduct](CODE_OF_CONDUCT.md) for details. All others will be included with the file and include notes.
 
 ## Reference
+
+Microsoft has some additional documents found below - mainly on how to get started and if your paying for Azure, what step and concepts to those intergrations are involved.
 
 - [Documentation](https://docs.microsoft.com/azure/machine-learning)
 
