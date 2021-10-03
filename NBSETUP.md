@@ -1,4 +1,4 @@
-# Set up your notebook environment for Azure Machine Learning
+# Set up your notebook environment for Machine Learning
 
 To run the notebooks in this repository use one of following options.
 
